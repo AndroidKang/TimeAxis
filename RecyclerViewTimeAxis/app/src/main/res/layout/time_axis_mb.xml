@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/construction_detail_iv_circular"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/construction_detail_circular" />
+
+        <View
+            android:id="@+id/construction_detail_top_line"
+            android:layout_width="1dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="33dp"
+            android:background="#00cdd0" />
+
+        <View
+            android:id="@+id/construction_detail_other_line"
+            android:layout_width="1dp"
+            android:layout_height="10000dp"
+            android:layout_alignBottom="@+id/construction_detail_layout"
+            android:layout_below="@+id/construction_detail_top_line"
+            android:layout_marginLeft="33dp"
+            android:background="#00cdd0" />
+
+        <LinearLayout
+            android:id="@+id/construction_detail_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/construction_detail_iv_circular"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/construction_detail_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:text="15：40"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/construction_detail_tv_data"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="内容内容"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
